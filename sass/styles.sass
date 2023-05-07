@@ -1,0 +1,112 @@
+@import 'reset'
+@import 'variables'
+
+header
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/office.jpg)
+  background-position: center
+  background-size: cover
+  height: 85vh
+  margin-bottom: 2rem
+
+  .navbar
+    height: 80px
+    background-color: $black
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2rem
+
+    .fa.fa-bars
+      display: none
+
+    &-logo
+      color: $light-color
+      font-size: 1.8rem
+      transition: $transition
+
+      &:hover
+        color: $primary-color
+
+    &-links
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
+      gap: 10px
+      
+      a
+        color: $light-color
+        transition: $transition
+
+        &:hover
+          color: $primary-color
+
+  .btn
+    padding: 8px 12px
+    border-radius: 5px
+    background-color: $primary-color
+    border: 1px solid transparent
+    text-transform: uppercase
+
+
+    &:hover
+      background-color: transparent
+      border: 1px solid $primary-color
+
+    &-rounded
+      border: 1px solid $light-color
+      color: $light-color
+      background-color: transparent
+
+    &-callout
+      height: 30px
+      border-radius: 30px
+      color: $light-color
+      padding: 12px 24px
+      transition: $transition
+
+      &:hover
+        color: $primary-color
+
+  .callout
+    text-align: center
+    color: $light-color
+    
+    &-title
+      text-shadow:  -1px -1px 0px $black
+      font-size: 3rem
+      margin: 5rem 0
+
+
+main
+  .main-title
+    text-align: center
+    font-size: 2.5rem
+    
+  .services
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    padding: 4rem
+    gap: 3rem
+
+    &-cards
+      height: 350px
+      padding: 2rem
+      border: 1px solid $text-color
+      text-align: center
+
+      i
+        color: $primary-color
+        font-size: 2.5rem
+        margin-bottom: 2rem
+      
+      &-title
+        font-size: 2rem
+        margin-bottom: 15px
+
+      &-description
+        color: $text-color
+
+    &-cards:hover
+      border: none
+      box-shadow: 0px 0px 5px 0px $text-color
+    
