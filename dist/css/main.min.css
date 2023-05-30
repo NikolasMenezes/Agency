@@ -91,7 +91,13 @@ header .callout-title {
 }
 @media (max-width: 520px) {
   header .callout-title {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  header .callout-title {
+    font-size: 2.5rem;
     padding: 1rem;
   }
 }
@@ -100,7 +106,7 @@ main .main-title {
   text-align: center;
   font-size: 3rem;
 }
-@media (max-width: 350px) {
+@media (max-width: 420px) {
   main .main-title {
     font-size: 2rem;
   }
@@ -125,11 +131,10 @@ main .services {
   main .services {
     position: relative;
     grid-template-columns: 1fr;
-    padding: 2rem;
     gap: 1rem;
   }
 }
-@media (max-width: 768px) and (max-width: 350px) {
+@media (max-width: 768px) and (max-width: 420px) {
   main .services {
     margin: 3rem 0;
     padding: 0;
@@ -142,7 +147,7 @@ main .services-cards {
   border: 1px solid #8b8e94;
   text-align: center;
 }
-@media (max-width: 350px) {
+@media (max-width: 420px) {
   main .services-cards {
     border: none;
   }
@@ -469,7 +474,7 @@ footer .footer-container-links ul li a:hover {
     left: 22.5%;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 420px) {
   .btn-services {
     left: 10%;
   }
